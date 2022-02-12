@@ -1,5 +1,6 @@
 /*let nombreIngresado;
 let edad;
+let calcular;
 
 do {
   nombreIngresado = prompt("Ingresar nombre");
@@ -18,10 +19,10 @@ let actividad = prompt("Eres: muy activo, activo, poco activo o sedentario");
 if (peso < 50) {
   switch (actividad) {
     case "muy activo":
-      alert("Tu consumo de proteinas diarias debe ser 90g");
+      alert("Tu consumo de proteinas diarias debe ser 190g");
       break;
     case "activo":
-      alert("Tu consumo de proteinas diarias debe ser 90g");
+      alert("Tu consumo de proteinas diarias debe ser 290g");
       break;
     case "poco activo":
       alert("Tu consumo de proteinas diarias debe ser 90g");
@@ -54,7 +55,7 @@ if (peso < 50) {
 } else {
   alert("Ingresa los campos correctamente");
 }
-*/
+
 let totalProteinas = 0;
 let gramos = 0;
 
@@ -85,3 +86,4 @@ do {
     }
   }
 } while (continuar);
+*/
