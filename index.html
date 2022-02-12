@@ -30,31 +30,38 @@
           <div class="Nombre">
             <form action="">
               <label for=""> Cuál es tu nombre</label>
-              <input type="text" />
+              <input id="nombre" type="text" />
             </form>
           </div>
           <div class="Edad">
             <form action="">
               <label for=""> Cuál es tu edad</label>
-              <input type="text" />
+              <input id="edad" type="text" />
             </form>
           </div>
           <div class="Peso">
             <form action="">
               <label for=""> Cuál es tu peso</label>
-              <input type="text" />
+              <input id="peso" type="text" />
             </form>
           </div>
         </div>
         <h3>¿Cómo de activo eres?</h3>
         <form class="actividad">
-          Sedentario<input type="radio" name="Sedentario" /> Poco activo
-          <input type="radio" name="Poco activo" /> Activo
-          <input type="radio" name="Poco activo" /> Muy activo
-          <input type="radio" name="Poco activo" />
+          <input id="nada" type="radio" name="activo" /> Sedentario
+          <input id="poco" type="radio" name="activo" /> Poco activo
+          <input id="normal" type="radio" name="activo" /> Activo
+          <input id="muy" type="radio" name="activo" />Muy activo
         </form>
       </div>
+
+      <button id="boton" class="rojo" value="0">
+        <h1>Calcular</h1>
+        <span> Proteina</span>
+      </button>
+      <p id="texto"></p>
+      <p id="textoDos"></p>
     </main>
-    <script src="main.js"></script>
+    <script src="mainDos.js"></script>
   </body>
 </html>
