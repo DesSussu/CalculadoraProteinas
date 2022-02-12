@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  background-color: yellow;
+  height: 40px;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  text-align: center;
+  margin: 40px;
+}
+h2 {
+  text-align: center;
+}
+
+.formularios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  gap: 40px;
+}
+
+.sobre {
+  display: flex;
+  gap: 20px;
+  width: 582px;
+}
+
+.sobre label {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+a {
+  cursor: pointer;
+}
+
+.tarjeta img {
+  cursor: pointer;
+  border: 1px solid black;
+  width: 300px;
+  margin: 20px;
+}
