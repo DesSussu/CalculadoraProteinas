@@ -69,10 +69,7 @@ const alimentos = [];
 alimentos.push(new carnes("pollo", "27"));
 alimentos.push(new carnes("ternera", "10"));
 alimentos.push(new carnes("cerdo", "7"));
-/*alimentos.push(new carnes(prompt("intrioduce nombre"), prompt("proteinas")));*/
 
-const found = alimentos.find((element) => element.proteinas == 10);
-console.log(found);
 let continuar = true;
 do {
   producto = prompt("elige entre pollo, ternera y cerdo");
