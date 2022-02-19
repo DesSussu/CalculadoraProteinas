@@ -2,15 +2,59 @@
   padding: 0;
   margin: 0;
 }
+body {
+  background: #f2f2f2;
+}
+main {
+  display: flex;
+}
+h1 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 15vw;
+  width: 65vw;
+  height: 90vh;
+  top: 5%;
+  right: 20%;
+  background: #f2f2f2;
+  box-shadow: 7px 7px 14px rgba(212, 211, 211, 0.84), -7px -7px 14px #ffffff;
+  border-radius: 53px;
+}
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 
 .menu {
+  position: absolute;
   display: flex;
   list-style: none;
-  background-color: yellow;
-  height: 40px;
+  top: 7%;
+  width: 10%;
+  left: 89%;
   gap: 40px;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  order: 2;
+}
+.menu div {
+  width: 92px;
+  height: 92px;
+  background: #f2f2f2;
+  box-shadow: 7px 7px 14px rgba(212, 211, 211, 0.84), -7px -7px 14px #ffffff;
 }
 
 header {
@@ -31,20 +75,64 @@ h2 {
 }
 
 .sobre {
+  position: relative;
   display: flex;
-  gap: 20px;
-  width: 582px;
-}
-
-.sobre label {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+  gap: 7%;
+  width: 125%;
+  bottom: 70px;
+  left: 40px;
 }
 a {
   cursor: pointer;
 }
 
+.input {
+  outline: none;
+  border: 0;
+  width: 378px;
+  height: 78px;
+  background: none;
+  box-shadow: inset 7px 7px 14px rgba(212, 211, 211, 0.84),
+    inset -7px -7px 14px #ffffff;
+  border-radius: 104px;
+  padding-left: 10%;
+  font-size: 20px;
+}
+.inputDos {
+  outline: none;
+  border: 0;
+  width: 190px;
+  height: 78px;
+  background: none;
+  box-shadow: inset 7px 7px 14px rgba(212, 211, 211, 0.84),
+    inset -7px -7px 14px #ffffff;
+  border-radius: 104px;
+
+  padding-left: 20%;
+  font-size: 20px;
+}
+.boton {
+  position: relative;
+  top: 10%;
+  left: 40%;
+  width: 183px;
+  height: 84px;
+  background: #f2f2f2;
+  box-shadow: 7px 7px 14px rgba(212, 211, 211, 0.84), -7px -7px 14px #ffffff;
+  border-radius: 34px;
+  border: none;
+}
+
+.boton h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+/*otra ventana*/
 .tarjeta img {
   cursor: pointer;
   border: 1px solid black;
