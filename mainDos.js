@@ -5,6 +5,7 @@ let calculo;
 let parrafo;
 let parrafoDos;
 let identificador;
+
 calculo = document.getElementById("boton");
 
 calculo.onclick = function () {
@@ -16,6 +17,7 @@ calculo.onclick = function () {
   for (deporte of actividad) {
     if (deporte.checked == true) {
       console.log(deporte.id);
+
       identificador = deporte.id;
     }
   }
