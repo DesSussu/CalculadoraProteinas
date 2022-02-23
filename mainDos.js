@@ -5,10 +5,11 @@ let calculo;
 let parrafo;
 let parrafoDos;
 let identificador;
-
+let boton;
 calculo = document.getElementById("boton");
-
+let cambioPag = document.getElementById("cambio");
 calculo.onclick = function () {
+  boton = document.getElementById("boton");
   usuario = document.getElementById("nombre").value;
   parrafo = document.getElementById("texto");
   parrafoDos = document.getElementById("textoDos");
@@ -17,50 +18,51 @@ calculo.onclick = function () {
   for (deporte of actividad) {
     if (deporte.checked == true) {
       console.log(deporte.id);
-
       identificador = deporte.id;
     }
   }
   resultado = elegirPeso();
-  parrafo.innerText = "Hola " + usuario;
-  parrafoDos.innerText = resultado;
+  //parrafo.innerText = "Hola " + usuario;
+  //parrafoDos.innerText = resultado;
+  boton.classList.toggle("active");
+  cambioPag.outerHTML = `<h1 class = "estiloCalculo"> HOLA  ${usuario.toUpperCase()}, </h1>  <p  class = "resultadoDatos"> Debes de consumir <br> ${resultado} de proteína <br> diariamente según tus <br> datos personales</p>`;
 };
 
 function elegirPeso() {
   if (peso < 50) {
     switch (identificador) {
       case "muy":
-        return "Tu consumo de proteinas diarias debe ser 290g";
+        return "290 gramos";
         break;
       case "poco":
-        return "Tu consumo de proteinas diarias debe ser 190g";
+        return "190 gramos";
         break;
       case "normal":
-        return "Tu consumo de proteinas diarias debe ser 090g";
+        return "90 gramos";
         break;
       case "nada":
-        return "Tu consumo de proteinas diarias debe ser 590g";
+        return "590 gramos";
         break;
       default:
-        return "Tu consumo de proteinas diarias debe ser 690g";
+        return " SIN DATOS";
         break;
     }
   } else if (peso >= 50) {
     switch (identificador) {
       case "muy":
-        return "Tu consumo de proteinas diarias debe ser 90g";
+        return "90 gramos";
         break;
       case "poco":
-        return "Tu consumo de proteinas diarias debe ser 80g";
+        return "80 gramos";
         break;
       case "nada":
-        return "Tu consumo de proteinas diarias debe ser 70g";
+        return "70 gramos";
         break;
       case "normal":
-        return "Tu consumo de proteinas diarias debe ser 10g";
+        return "10 gramos";
         break;
       default:
-        return "Tu consumo de proteinas diarias debe ser 90g";
+        return "SIN DATOS";
         break;
     }
   }
