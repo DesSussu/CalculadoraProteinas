@@ -6,11 +6,15 @@ let parrafo;
 let parrafoDos;
 let identificador;
 let boton;
+let user;
+
 calculo = document.getElementById("boton");
 let cambioPag = document.getElementById("cambio");
 calculo.onclick = function () {
   boton = document.getElementById("boton");
   usuario = document.getElementById("nombre").value;
+  localStorage.setItem("usuario", usuario);
+  user = localStorage.getItem("usuario");
   parrafo = document.getElementById("texto");
   parrafoDos = document.getElementById("textoDos");
   peso = document.getElementById("peso").value;
@@ -22,10 +26,8 @@ calculo.onclick = function () {
     }
   }
   resultado = elegirPeso();
-  //parrafo.innerText = "Hola " + usuario;
-  //parrafoDos.innerText = resultado;
   boton.classList.toggle("active");
-  cambioPag.outerHTML = `<h1 class = "estiloCalculo"> HOLA  ${usuario.toUpperCase()}, </h1>  <p  class = "resultadoDatos"> Debes de consumir <br> ${resultado} de proteína <br> diariamente según tus <br> datos personales</p>`;
+  cambioPag.outerHTML = `<h1 class = "estiloCalculo"> HOLA  ${user.toUpperCase()}, </h1>  <p  class = "resultadoDatos"> Debes de consumir <br> ${resultado} de proteína <br> diariamente según tus <br> datos personales</p>`;
 };
 
 function elegirPeso() {
