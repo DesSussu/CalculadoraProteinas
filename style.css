@@ -122,7 +122,6 @@ a {
   border-radius: 34px;
   border: none;
 }
-
 .boton h1 {
   display: flex;
   justify-content: center;
@@ -132,10 +131,52 @@ a {
   line-height: 35px;
 }
 
+.active {
+  position: relative;
+  top: 10%;
+  left: 40%;
+  width: 183px;
+  height: 84px;
+  border: none;
+  background: #f2f2f2;
+  box-shadow: inset 7px 7px 14px rgba(212, 211, 211, 0.84),
+    inset -7px -7px 14px #ffffff;
+  border-radius: 34px;
+}
+.active h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  line-height: 35px;
+  color: rgba(66, 0, 255, 0.43);
+}
 /*otra ventana*/
 .tarjeta img {
   cursor: pointer;
   border: 1px solid black;
   width: 300px;
   margin: 20px;
+}
+.estiloCalculo {
+  display: flex;
+  position: relative;
+  right: 182px;
+  bottom: 149px;
+  color: rgba(66, 0, 255, 0.43);
+}
+
+.resultadoDatos {
+  position: relative;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+  right: 467px;
+  bottom: 32px;
 }
