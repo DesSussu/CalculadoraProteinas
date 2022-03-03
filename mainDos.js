@@ -21,7 +21,6 @@ calculo.onclick = function () {
   actividad = document.getElementsByName("activo");
   for (deporte of actividad) {
     if (deporte.checked == true) {
-      console.log(deporte.id);
       identificador = deporte.id;
     }
   }
