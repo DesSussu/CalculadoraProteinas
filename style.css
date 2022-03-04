@@ -239,3 +239,10 @@ a {
   width: 70%;
   height: 70%;
 }
+
+#gramo {
+  background: #f2f2f2;
+  box-shadow: inset 7px 7px 14px rgba(212, 211, 211, 0.84),
+    inset -7px -7px 14px #ffffff;
+  border-radius: 33px;
+}
