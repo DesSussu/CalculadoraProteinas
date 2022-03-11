@@ -2,7 +2,7 @@ const tabla = document.querySelector("#lista-alimentos tbody");
 
 function cargarUsuarios() {
   fetch("talimentos.json")
-    .then((respuesta) => respuesta.json()) //Indicamos el formato en que se desea obtener la información
+    .then((respuesta) => respuesta.json())
     .then((usuarios) => {
       usuarios.forEach((usuario) => {
         const row = document.createElement("tr");
@@ -14,7 +14,7 @@ function cargarUsuarios() {
                 `;
         tabla.appendChild(row);
       });
-    }) // Aquí mostramos dicha información
+    })
     .catch((error) => console.log("Hubo un error : " + error.message));
 }
 
